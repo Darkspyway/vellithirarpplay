@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Vellithira Roleplay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .login-card {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 153, 0.2);
+            box-shadow: 0 0 30px rgba(0, 255, 153, 0.1);
+            max-width: 450px;
+            width: 100%;
+        }
+        .login-card h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .login-card p {
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+        .btn-discord {
+            background: #5865F2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-discord:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div class="login-container">
+        <div class="login-card">
+            <i class="fab fa-discord" style="font-size: 50px; color: #5865F2; margin-bottom: 20px;"></i>
+            <h1>Authentication Required</h1>
+            <p>To begin your evaluation, you must sign in with your Discord account. This ensures your exam attempts are tracked correctly.</p>
+            <a href="/api/auth/discord/login" class="btn-discord">
+                <i class="fab fa-discord"></i>
+                Login with Discord
+            </a>
+        </div>
+    </div>
+</body>
+</html>

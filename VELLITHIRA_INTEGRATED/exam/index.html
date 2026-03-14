@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELLITHIRA RP | Player Assessment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Image/GIF -->
+    <img src="bg.gif" id="background-video" alt="background">
+    <div class="overlay"></div>
+
+    <div class="warning-overlay" id="tab-warning">
+        ⚠️ Warning: Tab switching detected! (<span id="warn-count">0</span>/3)
+    </div>
+
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="screen-start" class="screen active">
+            <div class="glass-card">
+                <h1>VELLITHIRA <span>ASSESSMENT</span></h1>
+                <p class="subtitle">Welcome to the Vellithira Roleplay Visa Evaluation. To ensure the quality of our community, all applicants must pass this exam before joining the city.</p>
+                
+                <div style="margin-bottom: 30px; border-left: 3px solid var(--primary); padding-left: 20px;">
+                    <h3 style="margin-bottom: 10px; font-size: 1rem; color: var(--primary);">Exam Rules:</h3>
+                    <ul style="list-style: none; color: var(--text-dim); font-size: 0.95rem; line-height: 1.8;">
+                        <li><i class="fas fa-check" style="color: var(--success); margin-right: 10px;"></i> 12 Questions Total (10 MCQ, 2 Essay)</li>
+                        <li><i class="fas fa-check" style="color: var(--success); margin-right: 10px;"></i> 60s for MCQs | 90s for Essay</li>
+                        <li><i class="fas fa-clock" style="color: var(--primary); margin-right: 10px;"></i> 20 Words Minimum for Essay answers</li>
+                        <li><i class="fas fa-ban" style="color: var(--danger); margin-right: 10px;"></i> <b>NO PASTING</b> - Automatic failure</li>
+                        <li><i class="fas fa-exclamation-triangle" style="color: var(--danger); margin-right: 10px;"></i> 3 Tab Switch Max | 1 Attempt Daily</li>
+                    </ul>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <div style="margin-bottom: 15px;">
+                        <label style="display: block; color: var(--text-dim); margin-bottom: 8px; font-size: 0.9rem;">Your Character Name / Discord Tag</label>
+                        <input type="text" id="applicant-name" placeholder="E.g. John Doe / Dany#1234" style="width: 100%; padding: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--text); font-family: inherit; outline: none;">
+                    </div>
+                </div>
+
+                <div id="daily-limit-status" class="daily-limit-msg" style="display: none; margin-bottom: 20px; text-align: center; font-weight: 600; color: var(--danger);">
+                    ⚠️ You have already attempted the exam today. Please return tomorrow.
+                </div>
+
+                <button id="btn-start" class="btn-primary">Begin Evaluation</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="screen-quiz" class="screen">
+            <div class="glass-card">
+                <div class="quiz-header">
+                    <div style="font-weight: 600; color: var(--text-dim);">
+                        Question <span id="current-index">1</span> of 12
+                    </div>
+                    <div class="timer-box" id="timer-display">
+                        <i class="fas fa-clock"></i>
+                        <span id="time-left">60</span>s
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+
+                <div id="question-container">
+                    <h2 class="question-text" id="question-title">Loading Question...</h2>
+                    
+                    <!-- Options (for MCQ) -->
+                    <div class="options-grid" id="options-grid">
+                        <!-- Dynamic content -->
+                    </div>
+
+                    <!-- Essay (for Text Type) -->
+                    <div id="essay-container" style="display: none;">
+                        <textarea class="essay-area" id="essay-input" placeholder="Type your answer here..."></textarea>
+                        <div class="word-count" id="essay-count">
+                            Words: <span id="count-value">0</span> / 20
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <button id="btn-next" class="btn-primary" disabled>Next Question</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="screen-result" class="screen">
+            <div class="glass-card result-status">
+                <div id="result-icon" class="status-icon"></div>
+                <h1 id="result-title">EVALUATION COMPLETE</h1>
+                <p id="result-msg" class="subtitle">Your Visa status is being processed...</p>
+                <div class="score-text">
+                    Accuracy: <span id="final-score">0</span>%
+                </div>
+                <div id="fail-reason" style="color: var(--danger); margin-bottom: 20px; font-weight: 600;"></div>
+                <p class="subtitle" style="font-size: 0.9rem;">You can close this page now.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

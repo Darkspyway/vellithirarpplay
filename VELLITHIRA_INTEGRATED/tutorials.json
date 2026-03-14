@@ -1,0 +1,98 @@
+[
+    {
+        "id": "heal",
+        "title": "Healing & Survival",
+        "category": "Basics",
+        "description": "How to stay alive in the city and use medical supplies.",
+        "videoUrl": "https://www.youtube.com/embed/placeholder1",
+        "isBlackMarket": true
+    },
+    {
+        "id": "rob",
+        "title": "Robbery & Heists",
+        "category": "Crime",
+        "description": "Essential knowledge for successful robberies and heists.",
+        "videoUrl": "https://www.youtube.com/embed/placeholder2",
+        "isBlackMarket": true
+    },
+    {
+        "id": "grind",
+        "title": "Underground Grinding",
+        "category": "Economy",
+        "description": "Master the hidden grinding spots and resource gathering.",
+        "videoUrl": "https://www.youtube.com/embed/placeholder3",
+        "isBlackMarket": true
+    },
+    {
+        "id": "city_basic",
+        "title": "City Basics",
+        "category": "General",
+        "description": "Introduction to VELLITHIRA ROLEPLAY life.",
+        "videoUrl": "https://www.youtube.com/embed/placeholder4",
+        "isBlackMarket": false
+    },
+    {
+        "id": "ems_guide",
+        "title": "Medical Training",
+        "category": "General",
+        "description": "Advanced life-saving techniques for EMS aspirants.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": false
+    },
+    {
+        "id": "pd_guide",
+        "title": "Police Protocol",
+        "category": "General",
+        "description": "The official handbook for Law Enforcement Officers.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": false
+    },
+    {
+        "id": "bm_drugs",
+        "title": "Chemical Synthesis",
+        "category": "Crime",
+        "description": "Confidential formulas for high-grade substance production.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": true
+    },
+    {
+        "id": "bm_hacking",
+        "title": "Cyber Breach",
+        "category": "Crime",
+        "description": "Digital intrusion techniques for high-security vaults.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": true
+    },
+    {
+        "id": "city_map",
+        "title": "Navigation & GPS",
+        "category": "General",
+        "description": "Mastering the city mapping system and custom waypoints.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": false
+    },
+    {
+        "id": "job_center",
+        "title": "Labor Market",
+        "category": "General",
+        "description": "A deep dive into official government jobs and career paths.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": false
+    },
+    {
+        "id": "bm_money",
+        "title": "Laundry Services",
+        "category": "Crime",
+        "description": "Methods for cleaning marked bills through legitimate businesses.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": true
+    },
+    {
+        "id": "bm_arms",
+        "title": "Illegal Armory",
+        "category": "Crime",
+        "description": "Sourcing and maintaining grade-a illegal weaponry.",
+        "videoUrl": "COMING_SOON",
+        "isBlackMarket": true
+    }
+]

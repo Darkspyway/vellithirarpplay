@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials | Vellithira Roleplay</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="subpage">
+    <div class="bg-overlay"></div>
+    
+    <nav>
+        <div class="logo">VELLITHIRA<span>RP</span></div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="tutorials.html" class="active">Tutorials</a>
+            <a href="rules.html">Rules</a>
+            <a href="apply.html">Apply</a>
+        </div>
+    </nav>
+
+    <section class="page-content">
+        <div class="container">
+            <h1 class="page-title">Vellithira <span>Tutorials</span></h1>
+            
+            <div class="tutorial-switch">
+                <button class="switch-btn active" id="legal-switch">Legal Tutorials</button>
+                <button class="switch-btn" id="illegal-switch">Illegal Tutorials</button>
+            </div>
+            
+            <div class="tutorial-container active" id="legal-content">
+                <p class="section-desc">Learn how to live an honest life in the city.</p>
+                <div class="video-grid">
+                    <div class="video-placeholder" onclick="openVideo('City Guide')">
+                        <div class="play-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <span>City Guide</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-container" id="illegal-content-section">
+                <p class="section-desc">The shadows of the city hold many secrets.</p>
+                <div class="video-grid">
+                    <div class="video-placeholder illegal" onclick="openVideo('Healings')">
+                        <div class="play-icon"><i class="fas fa-first-aid"></i></div>
+                        <span>Healings</span>
+                    </div>
+                    <div class="video-placeholder illegal" onclick="openVideo('Grinding')">
+                        <div class="play-icon"><i class="fas fa-hammer"></i></div>
+                        <span>Grinding</span>
+                    </div>
+                    <div class="video-placeholder illegal" onclick="openVideo('Robbery')">
+                        <div class="play-icon"><i class="fas fa-mask"></i></div>
+                        <span>Robbery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal-overlay" id="video-modal">
+        <div class="modal">
+            <button class="close-modal">&times;</button>
+            <h2 id="modal-title">Tutorial: <span>City Guide</span></h2>
+            <div class="modal-content">
+                <div class="video-placeholder" style="width: 100%; cursor: default;">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                    <span id="modal-subtitle">Video Content Coming Soon</span>
+                </div>
+                <p style="margin-top: 1.5rem; text-align: center; color: var(--text-dim);">
+                    The official video guide for this section is currently being uploaded. <br>Please check back soon!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
